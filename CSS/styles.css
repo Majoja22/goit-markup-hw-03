@@ -68,7 +68,6 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
 }
 
 .header-contact {
@@ -85,22 +84,23 @@ body {
   align-items: center;
 }
 
-.header-logo-link {
-  margin-right: 70px;
-}
-
 .header-list {
   display: flex;
   gap: 40px;
+  margin-left: 70px;
 }
 
+.hero-container {
+  text-align: center;
+}
+
+.hero {
+  padding: 188px 0;
+}
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin: 0 auto; */
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* to remove underline in link */
@@ -121,7 +121,7 @@ body {
   line-height: 60px;
   letter-spacing: 1.12px;
   text-align: center;
-  padding-top: 188px;
+  margin-bottom: 60px;
 }
 
 /* Button or Order Service */
@@ -137,9 +137,6 @@ body {
   letter-spacing: 0.64px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 500px;
-  margin-top: 60px;
-  margin-bottom: 188px;
 }
 
 .button.filter-item {
@@ -166,11 +163,13 @@ body {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .benefits {
   display: flex;
   justify-content: center;
+  gap: 22px;
 }
 
 .benefits-description {
@@ -191,15 +190,15 @@ body {
 
 .section-list {
   display: flex;
-}
-
-.section-item {
-  width: calc((100% - 5px) / 3);
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section {
   padding: 120px 0;
+}
+
+.section-no-top-padding {
+  padding-top: 0;
 }
 
 /* section 3 */
@@ -231,12 +230,8 @@ body {
 }
 
 .team-name {
-  padding-top: 32px;
-  padding-bottom: 8px;
-}
-
-.team-position {
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-card {
@@ -245,10 +240,12 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  padding-bottom: 32px;
 }
 
 /* footer */
 .footer {
+  padding: 100px 0;
   background-color: var(--primary-text-navyblue);
 }
 
@@ -265,6 +262,7 @@ body {
 
 .footer-text {
   color: var(--secondary-bottom-cloud);
+  margin-top: 15px;
 }
 
 .footer-container {
@@ -277,9 +275,6 @@ body {
   margin-bottom: 15px;
 }
 
-.footer-text {
-  padding-bottom: 100px;
-}
 /* Portfolio page */
 .filter-title {
   color: var(--primary-text-navyblue);
@@ -358,19 +353,19 @@ body {
 .filter-card {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 48px 24px;
 }
 
 .filter-box {
-  border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
 }
 
-.filter-title {
-  margin-top: 32px;
+.filter-description {
+  margin-top: 8px;
 }
 
-.filter-description {
-  margin-bottom: 32px;
-  margin-top: 8px;
+.project-text-wrapper {
+  border: 1px solid var(--cornflower, #e7e9fc);
+  border-top: none;
+  padding: 32px 16px;
 }
