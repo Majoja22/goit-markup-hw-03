@@ -270,11 +270,6 @@ body {
   flex-direction: column;
 }
 
-.footer-link {
-  margin-top: 100px;
-  margin-bottom: 15px;
-}
-
 /* Portfolio page */
 .filter-title {
   color: var(--primary-text-navyblue);
